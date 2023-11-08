@@ -1,0 +1,131 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* My Style */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #e3f9ff;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+hr {
+    width: 12rem;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: 100vh;
+    width: 20%;
+    margin-top: -70px;
+}
+
+.calculator {
+    background-color: #3a4452;
+    padding: 20px;
+    border-radius: 10px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.base {
+    display: flex;
+    flex-direction: column;
+}
+
+.base .tombol {
+    display: flex;
+    margin-top: 20px;
+    gap: 24px;
+}
+
+.base .tombol span {
+    color: #fff;
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #4d596a;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.base .tombol span.sama {
+    width: 130px;
+}
+
+.base .tombol span:hover {
+    background-color: rgb(69, 80, 97)
+}
+
+.base .display input {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 45px;
+    background-color: transparent;
+    text-align: right;
+    color: #fff;
+}
+
+.color-blue {
+    background-color: #0060e5 !important;
+}
+
+.color-blue:hover {
+    background-color: #0058d2 !important;
+}
